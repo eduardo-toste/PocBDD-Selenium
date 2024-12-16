@@ -1,4 +1,3 @@
-@ignore
 Feature: Automação de Login
 
   Background:
@@ -15,11 +14,13 @@ Feature: Automação de Login
     Then o login é recusado e apresenta o erro
 
   Scenario: Teste de login com credenciais incorretas
-    When insiro um e-mail e senha incorretos
+    When insiro o e-mail "a@a.com"
+    And insiro a senha "aaaa"
     And clico em Sign in
     Then o login é recusado e apresenta o erro
 
   Scenario: Teste de login com crendenciais corretas
-    When insiro um e-mail e senha corretos
+    When insiro o e-mail "rodrigogarro10@gmail.com"
+    And insiro a senha "rgarro10"
     And clico em Sign in
     Then o login é aceito

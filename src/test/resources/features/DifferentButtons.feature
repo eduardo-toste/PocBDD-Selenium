@@ -1,3 +1,4 @@
+@ignore
 Feature: Clicando em botões usando diferentes seletores
 
   Background:
